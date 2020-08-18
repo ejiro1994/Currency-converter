@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Currency Converter</title>
+    <style>
+        :root {
+            --primary-color: #0A2E36;
+            --secondary-color: #27FB6B;
+            --bg-color: #92B4A7;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-color);
+            /* height: 100vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            text-transform: uppercase;
+
+
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 1rem;
+        }
+
+        #currency-container-1 {
+            width: 350px;
+            height: 267px;
+            background: var(--primary-color);
+            border-radius: 40px 40px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: var(--secondary-color);
+            font-size: 24px;
+            line-height: 28px;
+
+        }
+
+        #currency-container-2 {
+            width: 350px;
+            height: 267px;
+            background: var(--secondary-color);
+            border-radius: 0px 0px 40px 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: var(--primary-color);
+            font-size: 24px;
+            line-height: 28px;
+
+        }
+
+        #currency-text-input {
+            all: unset;
+            content: 'hello';
+            border-bottom: solid 1px var(--secondary-color);
+            width: calc(350px - 6rem);
+            text-align: center;
+            place
+        }
+
+        input::placeholder {
+            /* color: rgba(var(--secondary-color), 0.2); */
+
+
+        }
+
+        #currency-text-input,
+        #currency-text-output {
+
+            font-size: 72px;
+            line-height: 84px;
+
+        }
+
+
+
+        .symbol {
+            font-size: 24px;
+        }
+
+        #convert-btn {
+            width: 116px;
+            height: 116px;
+            border: 9px solid var(--primary-color);
+            border-radius: 100px;
+            background: var(--secondary-color);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+
+
+        }
+
+        #input-container, #output-container {
+            display: flex;
+            align-items: baseline
+;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="currency-converter.js"></script>
+</body>
+
+</html>
